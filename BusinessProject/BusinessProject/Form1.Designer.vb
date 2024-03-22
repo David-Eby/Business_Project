@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.ConfirmButton = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Group2_5 = New System.Windows.Forms.RadioButton()
         Me.Group2_4 = New System.Windows.Forms.RadioButton()
         Me.Group2_3 = New System.Windows.Forms.RadioButton()
         Me.Group2_2 = New System.Windows.Forms.RadioButton()
@@ -33,7 +34,6 @@ Partial Class Form1
         Me.NextButton = New System.Windows.Forms.Button()
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.Group1SubTotal = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Group1 = New System.Windows.Forms.GroupBox()
         Me.Group1Clear = New System.Windows.Forms.Button()
         Me.Group1_5 = New System.Windows.Forms.CheckBox()
@@ -42,6 +42,7 @@ Partial Class Form1
         Me.Group1_2 = New System.Windows.Forms.CheckBox()
         Me.Group1_1 = New System.Windows.Forms.CheckBox()
         Me.Group1Counter = New System.Windows.Forms.NumericUpDown()
+        Me.ItemSelection1 = New BusinessProject.ItemSelection()
         Me.GroupBox1.SuspendLayout()
         Me.Group1.SuspendLayout()
         CType(Me.Group1Counter, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +59,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.Group2_5)
         Me.GroupBox1.Controls.Add(Me.Group2_4)
         Me.GroupBox1.Controls.Add(Me.Group2_3)
         Me.GroupBox1.Controls.Add(Me.Group2_2)
@@ -70,6 +71,17 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "CPU"
+        '
+        'Group2_5
+        '
+        Me.Group2_5.AutoSize = True
+        Me.Group2_5.Location = New System.Drawing.Point(6, 126)
+        Me.Group2_5.Name = "Group2_5"
+        Me.Group2_5.Size = New System.Drawing.Size(153, 20)
+        Me.Group2_5.TabIndex = 12
+        Me.Group2_5.TabStop = True
+        Me.Group2_5.Text = "Threadripper ($5227)"
+        Me.Group2_5.UseVisualStyleBackColor = True
         '
         'Group2_4
         '
@@ -162,17 +174,6 @@ Partial Class Form1
         Me.Group1SubTotal.Text = "$0.00"
         Me.Group1SubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(6, 126)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(153, 20)
-        Me.RadioButton1.TabIndex = 12
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Threadripper ($5227)"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
         'Group1
         '
         Me.Group1.Controls.Add(Me.Group1Clear)
@@ -256,11 +257,31 @@ Partial Class Form1
         Me.Group1Counter.TabIndex = 1
         Me.Group1Counter.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
+        'ItemSelection1
+        '
+        Me.ItemSelection1.groupName = "Hard Drives"
+        Me.ItemSelection1.isMultiple = False
+        Me.ItemSelection1.item1Name = "500 MB"
+        Me.ItemSelection1.item1Price = New Decimal(New Integer() {2862, 0, 0, 131072})
+        Me.ItemSelection1.item2Name = "1 TB"
+        Me.ItemSelection1.item2Price = New Decimal(New Integer() {6008, 0, 0, 131072})
+        Me.ItemSelection1.item3Name = "2 TB"
+        Me.ItemSelection1.item3Price = New Decimal(New Integer() {7099, 0, 0, 131072})
+        Me.ItemSelection1.item4Name = "10 TB"
+        Me.ItemSelection1.item4Price = New Decimal(New Integer() {18179, 0, 0, 131072})
+        Me.ItemSelection1.item5Name = "18 TB"
+        Me.ItemSelection1.item5Price = New Decimal(New Integer() {33499, 0, 0, 131072})
+        Me.ItemSelection1.Location = New System.Drawing.Point(378, 79)
+        Me.ItemSelection1.Name = "ItemSelection1"
+        Me.ItemSelection1.Size = New System.Drawing.Size(210, 195)
+        Me.ItemSelection1.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.Group1)
         Me.Controls.Add(Me.Group1SubTotal)
         Me.Controls.Add(Me.HeaderTB)
@@ -290,7 +311,7 @@ Partial Class Form1
     Friend WithEvents PreviousButton As Button
     Friend WithEvents NextButton As Button
     Friend WithEvents HeaderTB As TextBox
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents Group2_5 As RadioButton
     Friend WithEvents Group1 As GroupBox
     Friend WithEvents Group1Clear As Button
     Friend WithEvents Group1_5 As CheckBox
@@ -299,4 +320,5 @@ Partial Class Form1
     Friend WithEvents Group1_2 As CheckBox
     Friend WithEvents Group1_1 As CheckBox
     Friend WithEvents Group1Counter As NumericUpDown
+    Friend WithEvents ItemSelection1 As ItemSelection
 End Class
