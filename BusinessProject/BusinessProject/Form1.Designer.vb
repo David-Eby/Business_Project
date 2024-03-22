@@ -22,14 +22,15 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ConfirmButton = New System.Windows.Forms.Button()
         Me.PreviousButton = New System.Windows.Forms.Button()
         Me.NextButton = New System.Windows.Forms.Button()
-        Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.TotalTextBox = New System.Windows.Forms.TextBox()
         Me.ItemSelection1 = New BusinessProject.ItemSelection()
-        Me.ItemSelection2 = New BusinessProject.ItemSelection()
-        Me.ItemSelection3 = New BusinessProject.ItemSelection()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.group1Total = New System.Windows.Forms.TextBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'ConfirmButton
@@ -59,16 +60,6 @@ Partial Class Form1
         Me.NextButton.Text = "Next"
         Me.NextButton.UseVisualStyleBackColor = True
         '
-        'HeaderTB
-        '
-        Me.HeaderTB.Location = New System.Drawing.Point(359, 13)
-        Me.HeaderTB.Name = "HeaderTB"
-        Me.HeaderTB.ReadOnly = True
-        Me.HeaderTB.Size = New System.Drawing.Size(75, 22)
-        Me.HeaderTB.TabIndex = 11
-        Me.HeaderTB.Text = "Brain"
-        Me.HeaderTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'TotalTextBox
         '
         Me.TotalTextBox.Location = New System.Drawing.Point(671, 12)
@@ -82,6 +73,7 @@ Partial Class Form1
         'ItemSelection1
         '
         Me.ItemSelection1.groupName = "Hard Drives"
+        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ItemSelection1.isMultiple = True
         Me.ItemSelection1.item1Name = "500 MB"
         Me.ItemSelection1.item1Price = New Decimal(New Integer() {2862, 0, 0, 131072})
@@ -93,59 +85,43 @@ Partial Class Form1
         Me.ItemSelection1.item4Price = New Decimal(New Integer() {18179, 0, 0, 131072})
         Me.ItemSelection1.item5Name = "18 TB"
         Me.ItemSelection1.item5Price = New Decimal(New Integer() {33499, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(14, 214)
+        Me.ItemSelection1.Location = New System.Drawing.Point(549, 40)
         Me.ItemSelection1.Name = "ItemSelection1"
         Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection1.TabIndex = 14
         '
-        'ItemSelection2
+        'TextBox1
         '
-        Me.ItemSelection2.groupName = "CPUs"
-        Me.ItemSelection2.isMultiple = False
-        Me.ItemSelection2.item1Name = "6 Core"
-        Me.ItemSelection2.item1Price = New Decimal(New Integer() {139, 0, 0, 0})
-        Me.ItemSelection2.item2Name = "8 Core"
-        Me.ItemSelection2.item2Price = New Decimal(New Integer() {369, 0, 0, 0})
-        Me.ItemSelection2.item3Name = "12 Core"
-        Me.ItemSelection2.item3Price = New Decimal(New Integer() {46323, 0, 0, 131072})
-        Me.ItemSelection2.item4Name = "16 Core"
-        Me.ItemSelection2.item4Price = New Decimal(New Integer() {669, 0, 0, 0})
-        Me.ItemSelection2.item5Name = "Threadripper"
-        Me.ItemSelection2.item5Price = New Decimal(New Integer() {5227, 0, 0, 0})
-        Me.ItemSelection2.Location = New System.Drawing.Point(14, 13)
-        Me.ItemSelection2.Name = "ItemSelection2"
-        Me.ItemSelection2.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection2.TabIndex = 15
+        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 15
+        Me.TextBox1.Text = "Brain"
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'ItemSelection3
+        'group1Total
         '
-        Me.ItemSelection3.groupName = "GPUs"
-        Me.ItemSelection3.isMultiple = False
-        Me.ItemSelection3.item1Name = "3060"
-        Me.ItemSelection3.item1Price = New Decimal(New Integer() {33384, 0, 0, 131072})
-        Me.ItemSelection3.item2Name = "3070"
-        Me.ItemSelection3.item2Price = New Decimal(New Integer() {46999, 0, 0, 131072})
-        Me.ItemSelection3.item3Name = "4070"
-        Me.ItemSelection3.item3Price = New Decimal(New Integer() {57299, 0, 0, 131072})
-        Me.ItemSelection3.item4Name = "4080"
-        Me.ItemSelection3.item4Price = New Decimal(New Integer() {116999, 0, 0, 131072})
-        Me.ItemSelection3.item5Name = "4090"
-        Me.ItemSelection3.item5Price = New Decimal(New Integer() {293628, 0, 0, 131072})
-        Me.ItemSelection3.Location = New System.Drawing.Point(259, 131)
-        Me.ItemSelection3.Name = "ItemSelection3"
-        Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection3.TabIndex = 16
+        Me.group1Total.Location = New System.Drawing.Point(12, 40)
+        Me.group1Total.Name = "group1Total"
+        Me.group1Total.ReadOnly = True
+        Me.group1Total.Size = New System.Drawing.Size(100, 22)
+        Me.group1Total.TabIndex = 16
+        Me.group1Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 50
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ItemSelection3)
-        Me.Controls.Add(Me.ItemSelection2)
+        Me.Controls.Add(Me.group1Total)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.TotalTextBox)
-        Me.Controls.Add(Me.HeaderTB)
         Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.PreviousButton)
         Me.Controls.Add(Me.ConfirmButton)
@@ -159,8 +135,8 @@ Partial Class Form1
     Friend WithEvents TotalTextBox As TextBox
     Friend WithEvents PreviousButton As Button
     Friend WithEvents NextButton As Button
-    Friend WithEvents HeaderTB As TextBox
     Friend WithEvents ItemSelection1 As ItemSelection
-    Friend WithEvents ItemSelection2 As ItemSelection
-    Friend WithEvents ItemSelection3 As ItemSelection
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents group1Total As TextBox
+    Friend WithEvents Timer1 As Timer
 End Class
