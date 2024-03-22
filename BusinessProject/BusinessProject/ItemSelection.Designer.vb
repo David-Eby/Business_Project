@@ -59,7 +59,7 @@ Partial Class ItemSelection
         Me.Group1.Controls.Add(Me.Group1Counter)
         Me.Group1.Location = New System.Drawing.Point(3, 3)
         Me.Group1.Name = "Group1"
-        Me.Group1.Size = New System.Drawing.Size(204, 189)
+        Me.Group1.Size = New System.Drawing.Size(233, 189)
         Me.Group1.TabIndex = 13
         Me.Group1.TabStop = False
         Me.Group1.Text = "Group"
@@ -68,7 +68,7 @@ Partial Class ItemSelection
         '
         Me.subTotalText.Location = New System.Drawing.Point(79, 155)
         Me.subTotalText.Name = "subTotalText"
-        Me.subTotalText.Size = New System.Drawing.Size(119, 22)
+        Me.subTotalText.Size = New System.Drawing.Size(148, 22)
         Me.subTotalText.TabIndex = 13
         Me.subTotalText.Text = "$0.00"
         '
@@ -129,9 +129,9 @@ Partial Class ItemSelection
         '
         'Group1Clear
         '
-        Me.Group1Clear.Location = New System.Drawing.Point(141, 19)
+        Me.Group1Clear.Location = New System.Drawing.Point(174, 18)
         Me.Group1Clear.Name = "Group1Clear"
-        Me.Group1Clear.Size = New System.Drawing.Size(53, 49)
+        Me.Group1Clear.Size = New System.Drawing.Size(53, 50)
         Me.Group1Clear.TabIndex = 7
         Me.Group1Clear.Text = "Clear"
         Me.Group1Clear.UseVisualStyleBackColor = True
@@ -210,7 +210,7 @@ Partial Class ItemSelection
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Group1)
         Me.Name = "ItemSelection"
-        Me.Size = New System.Drawing.Size(210, 195)
+        Me.Size = New System.Drawing.Size(239, 195)
         Me.Group1.ResumeLayout(False)
         Me.Group1.PerformLayout()
         CType(Me.Group1Counter, System.ComponentModel.ISupportInitialize).EndInit()

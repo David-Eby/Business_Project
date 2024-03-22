@@ -1,4 +1,6 @@
-﻿Public Class ItemSelection
+﻿Imports System.Security.Cryptography.X509Certificates
+
+Public Class ItemSelection
     Public Property groupName As String = "Group"
 
     Public Property item1Name As String = "Item"
@@ -13,6 +15,8 @@
     Public Property item5Price As Decimal = 0
 
     Public Property isMultiple As Boolean
+
+    Public Property groupTotal As Decimal
 
     Private Sub checkPrice_Tick(sender As Object, e As EventArgs) Handles brainTimer.Tick
         Group1.Text = groupName
@@ -61,7 +65,6 @@
         Dim price(4) As Decimal
 
         Dim subTotal As Decimal
-        Dim groupTotal As Decimal
 
         If Item1.Checked = True Or Item1M.Checked = True Then
             price(0) = item1Price
