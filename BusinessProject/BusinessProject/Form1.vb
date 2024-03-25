@@ -10,7 +10,7 @@ Public Class Form1
     Dim f2 As New Brain
 
     Private Sub ConfirmButton_Click(sender As Object, e As EventArgs) Handles ConfirmButton.Click
-        total = ItemSelection1.groupTotal + f2.Page1_1.groupTotal
+        total = ItemSelection1.groupTotal + f2.Page1_1.groupTotal + ItemSelection2.groupTotal + ItemSelection3.groupTotal + f2.Page1_2.groupTotal + f2.Page1_3.groupTotal
         TotalTextBox.Text = total.ToString("c2")
     End Sub
 

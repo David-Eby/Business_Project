@@ -31,6 +31,8 @@ Partial Class Form1
         Me.brainTotal = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
+        Me.ItemSelection2 = New BusinessProject.ItemSelection()
+        Me.ItemSelection3 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'ConfirmButton
@@ -85,7 +87,7 @@ Partial Class Form1
         Me.ItemSelection1.item4Price = New Decimal(New Integer() {18179, 0, 0, 131072})
         Me.ItemSelection1.item5Name = "18 TB"
         Me.ItemSelection1.item5Price = New Decimal(New Integer() {33499, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(549, 40)
+        Me.ItemSelection1.Location = New System.Drawing.Point(542, 128)
         Me.ItemSelection1.Name = "ItemSelection1"
         Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection1.TabIndex = 14
@@ -113,11 +115,53 @@ Partial Class Form1
         Me.calcPrice.Enabled = True
         Me.calcPrice.Interval = 50
         '
+        'ItemSelection2
+        '
+        Me.ItemSelection2.groupName = "Ram"
+        Me.ItemSelection2.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection2.isMultiple = False
+        Me.ItemSelection2.item1Name = "16GB"
+        Me.ItemSelection2.item1Price = New Decimal(New Integer() {3599, 0, 0, 131072})
+        Me.ItemSelection2.item2Name = "32GB"
+        Me.ItemSelection2.item2Price = New Decimal(New Integer() {11299, 0, 0, 131072})
+        Me.ItemSelection2.item3Name = "64GB"
+        Me.ItemSelection2.item3Price = New Decimal(New Integer() {18499, 0, 0, 131072})
+        Me.ItemSelection2.item4Name = "96GB"
+        Me.ItemSelection2.item4Price = New Decimal(New Integer() {24999, 0, 0, 131072})
+        Me.ItemSelection2.item5Name = "128GB"
+        Me.ItemSelection2.item5Price = New Decimal(New Integer() {42999, 0, 0, 131072})
+        Me.ItemSelection2.Location = New System.Drawing.Point(281, 128)
+        Me.ItemSelection2.Name = "ItemSelection2"
+        Me.ItemSelection2.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection2.TabIndex = 18
+        '
+        'ItemSelection3
+        '
+        Me.ItemSelection3.groupName = "Power Supplies"
+        Me.ItemSelection3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection3.isMultiple = False
+        Me.ItemSelection3.item1Name = "600W"
+        Me.ItemSelection3.item1Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.ItemSelection3.item2Name = "750W"
+        Me.ItemSelection3.item2Price = New Decimal(New Integer() {7499, 0, 0, 131072})
+        Me.ItemSelection3.item3Name = "850W"
+        Me.ItemSelection3.item3Price = New Decimal(New Integer() {12999, 0, 0, 131072})
+        Me.ItemSelection3.item4Name = "1000W"
+        Me.ItemSelection3.item4Price = New Decimal(New Integer() {17499, 0, 0, 131072})
+        Me.ItemSelection3.item5Name = "1200W"
+        Me.ItemSelection3.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
+        Me.ItemSelection3.Location = New System.Drawing.Point(20, 128)
+        Me.ItemSelection3.Name = "ItemSelection3"
+        Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection3.TabIndex = 19
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ItemSelection3)
+        Me.Controls.Add(Me.ItemSelection2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.brainTotal)
         Me.Controls.Add(Me.ItemSelection1)
@@ -139,4 +183,6 @@ Partial Class Form1
     Friend WithEvents brainTotal As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents calcPrice As Timer
+    Friend WithEvents ItemSelection2 As ItemSelection
+    Friend WithEvents ItemSelection3 As ItemSelection
 End Class
