@@ -97,6 +97,5 @@ Public Class ItemSelection
         count = Group1Counter.Value
 
         groupTotal = count * subTotal
-        subTotalText.Text = groupTotal.ToString("c2")
     End Sub
 End Class

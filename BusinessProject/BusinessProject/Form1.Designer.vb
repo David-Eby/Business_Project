@@ -28,8 +28,8 @@ Partial Class Form1
         Me.NextButton = New System.Windows.Forms.Button()
         Me.TotalTextBox = New System.Windows.Forms.TextBox()
         Me.ItemSelection1 = New BusinessProject.ItemSelection()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.group1Total = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
@@ -73,7 +73,6 @@ Partial Class Form1
         'ItemSelection1
         '
         Me.ItemSelection1.groupName = "Hard Drives"
-        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ItemSelection1.isMultiple = True
         Me.ItemSelection1.item1Name = "500 MB"
         Me.ItemSelection1.item1Price = New Decimal(New Integer() {2862, 0, 0, 131072})
@@ -90,16 +89,6 @@ Partial Class Form1
         Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection1.TabIndex = 14
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 15
-        Me.TextBox1.Text = "Brain"
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'group1Total
         '
         Me.group1Total.Location = New System.Drawing.Point(12, 40)
@@ -108,6 +97,15 @@ Partial Class Form1
         Me.group1Total.Size = New System.Drawing.Size(100, 22)
         Me.group1Total.TabIndex = 16
         Me.group1Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(100, 23)
+        Me.Button1.TabIndex = 17
+        Me.Button1.Text = "Brain"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -118,8 +116,8 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.group1Total)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.TotalTextBox)
         Me.Controls.Add(Me.NextButton)
@@ -136,7 +134,7 @@ Partial Class Form1
     Friend WithEvents PreviousButton As Button
     Friend WithEvents NextButton As Button
     Friend WithEvents ItemSelection1 As ItemSelection
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents group1Total As TextBox
+    Friend WithEvents Button1 As Button
     Friend WithEvents Timer1 As Timer
 End Class
