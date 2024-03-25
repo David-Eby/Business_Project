@@ -30,9 +30,12 @@ Public Class Form1
         If page = 1 Then
         End If
     End Sub
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim brain As New Brain
-        group1Total.Text = brain.Page1_1.groupTotal
+    Private Sub calcPrice_Tick(sender As Object, e As EventArgs) Handles calcPrice.Tick
+        If Not f2.pageTotalText.Text = f2.ErrorMessage Then
+            brainTotal.Text = f2.pageTotalText.Text
+        Else
+            brainTotal.Text = "$0.00"
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

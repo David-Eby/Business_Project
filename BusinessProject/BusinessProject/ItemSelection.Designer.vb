@@ -24,7 +24,7 @@ Partial Class ItemSelection
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Group1 = New System.Windows.Forms.GroupBox()
-        Me.subTotalText = New System.Windows.Forms.TextBox()
+        Me.groupSubTotalText = New System.Windows.Forms.TextBox()
         Me.Item5 = New System.Windows.Forms.RadioButton()
         Me.Item4 = New System.Windows.Forms.RadioButton()
         Me.Item3 = New System.Windows.Forms.RadioButton()
@@ -44,7 +44,7 @@ Partial Class ItemSelection
         '
         'Group1
         '
-        Me.Group1.Controls.Add(Me.subTotalText)
+        Me.Group1.Controls.Add(Me.groupSubTotalText)
         Me.Group1.Controls.Add(Me.Item5)
         Me.Group1.Controls.Add(Me.Item4)
         Me.Group1.Controls.Add(Me.Item3)
@@ -64,13 +64,13 @@ Partial Class ItemSelection
         Me.Group1.TabStop = False
         Me.Group1.Text = "Group"
         '
-        'subTotalText
+        'groupSubTotalText
         '
-        Me.subTotalText.Location = New System.Drawing.Point(79, 155)
-        Me.subTotalText.Name = "subTotalText"
-        Me.subTotalText.Size = New System.Drawing.Size(148, 22)
-        Me.subTotalText.TabIndex = 13
-        Me.subTotalText.Text = "$0.00"
+        Me.groupSubTotalText.Location = New System.Drawing.Point(79, 155)
+        Me.groupSubTotalText.Name = "groupSubTotalText"
+        Me.groupSubTotalText.Size = New System.Drawing.Size(148, 22)
+        Me.groupSubTotalText.TabIndex = 13
+        Me.groupSubTotalText.Text = "$0.00"
         '
         'Item5
         '
@@ -232,5 +232,5 @@ Partial Class ItemSelection
     Friend WithEvents Item2 As RadioButton
     Friend WithEvents Item1 As RadioButton
     Friend WithEvents brainTimer As Timer
-    Friend WithEvents subTotalText As TextBox
+    Friend WithEvents groupSubTotalText As TextBox
 End Class

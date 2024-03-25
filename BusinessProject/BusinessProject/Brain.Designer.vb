@@ -23,17 +23,43 @@ Partial Class Brain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Me.HeaderTB = New System.Windows.Forms.TextBox()
+        Me.pageTotalText = New System.Windows.Forms.TextBox()
+        Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
         Me.Page1_3 = New BusinessProject.ItemSelection()
         Me.Page1_2 = New BusinessProject.ItemSelection()
         Me.Page1_1 = New BusinessProject.ItemSelection()
-        Me.HeaderTB = New System.Windows.Forms.TextBox()
-        Me.pageTotalText = New System.Windows.Forms.TextBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
+        '
+        'HeaderTB
+        '
+        Me.HeaderTB.Location = New System.Drawing.Point(360, 12)
+        Me.HeaderTB.Name = "HeaderTB"
+        Me.HeaderTB.ReadOnly = True
+        Me.HeaderTB.Size = New System.Drawing.Size(75, 22)
+        Me.HeaderTB.TabIndex = 18
+        Me.HeaderTB.Text = "Brain"
+        Me.HeaderTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'pageTotalText
+        '
+        Me.pageTotalText.Location = New System.Drawing.Point(318, 40)
+        Me.pageTotalText.Name = "pageTotalText"
+        Me.pageTotalText.ReadOnly = True
+        Me.pageTotalText.Size = New System.Drawing.Size(158, 22)
+        Me.pageTotalText.TabIndex = 22
+        Me.pageTotalText.Text = "Select All Options"
+        Me.pageTotalText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'calcPrice
+        '
+        Me.calcPrice.Enabled = True
+        Me.calcPrice.Interval = 50
         '
         'Page1_3
         '
         Me.Page1_3.groupName = "Motherboards"
+        Me.Page1_3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page1_3.isMultiple = False
         Me.Page1_3.item1Name = "B650M"
         Me.Page1_3.item1Price = New Decimal(New Integer() {14999, 0, 0, 131072})
@@ -53,6 +79,7 @@ Partial Class Brain
         'Page1_2
         '
         Me.Page1_2.groupName = "GPUs"
+        Me.Page1_2.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page1_2.isMultiple = False
         Me.Page1_2.item1Name = "3060"
         Me.Page1_2.item1Price = New Decimal(New Integer() {33384, 0, 0, 131072})
@@ -72,6 +99,7 @@ Partial Class Brain
         'Page1_1
         '
         Me.Page1_1.groupName = "CPUs"
+        Me.Page1_1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page1_1.isMultiple = False
         Me.Page1_1.item1Name = "6 Core"
         Me.Page1_1.item1Price = New Decimal(New Integer() {139, 0, 0, 0})
@@ -87,29 +115,6 @@ Partial Class Brain
         Me.Page1_1.Name = "Page1_1"
         Me.Page1_1.Size = New System.Drawing.Size(239, 195)
         Me.Page1_1.TabIndex = 19
-        '
-        'HeaderTB
-        '
-        Me.HeaderTB.Location = New System.Drawing.Point(361, 12)
-        Me.HeaderTB.Name = "HeaderTB"
-        Me.HeaderTB.ReadOnly = True
-        Me.HeaderTB.Size = New System.Drawing.Size(75, 22)
-        Me.HeaderTB.TabIndex = 18
-        Me.HeaderTB.Text = "Brain"
-        Me.HeaderTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'pageTotalText
-        '
-        Me.pageTotalText.Location = New System.Drawing.Point(343, 40)
-        Me.pageTotalText.Name = "pageTotalText"
-        Me.pageTotalText.ReadOnly = True
-        Me.pageTotalText.Size = New System.Drawing.Size(110, 22)
-        Me.pageTotalText.TabIndex = 22
-        Me.pageTotalText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Timer1
-        '
-        Me.Timer1.Interval = 50
         '
         'Brain
         '
@@ -133,5 +138,5 @@ Partial Class Brain
     Friend WithEvents Page1_1 As ItemSelection
     Friend WithEvents HeaderTB As TextBox
     Friend WithEvents pageTotalText As TextBox
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents calcPrice As Timer
 End Class

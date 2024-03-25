@@ -28,9 +28,9 @@ Partial Class Form1
         Me.NextButton = New System.Windows.Forms.Button()
         Me.TotalTextBox = New System.Windows.Forms.TextBox()
         Me.ItemSelection1 = New BusinessProject.ItemSelection()
-        Me.group1Total = New System.Windows.Forms.TextBox()
+        Me.brainTotal = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'ConfirmButton
@@ -73,6 +73,7 @@ Partial Class Form1
         'ItemSelection1
         '
         Me.ItemSelection1.groupName = "Hard Drives"
+        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ItemSelection1.isMultiple = True
         Me.ItemSelection1.item1Name = "500 MB"
         Me.ItemSelection1.item1Price = New Decimal(New Integer() {2862, 0, 0, 131072})
@@ -89,14 +90,14 @@ Partial Class Form1
         Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection1.TabIndex = 14
         '
-        'group1Total
+        'brainTotal
         '
-        Me.group1Total.Location = New System.Drawing.Point(12, 40)
-        Me.group1Total.Name = "group1Total"
-        Me.group1Total.ReadOnly = True
-        Me.group1Total.Size = New System.Drawing.Size(100, 22)
-        Me.group1Total.TabIndex = 16
-        Me.group1Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.brainTotal.Location = New System.Drawing.Point(12, 40)
+        Me.brainTotal.Name = "brainTotal"
+        Me.brainTotal.ReadOnly = True
+        Me.brainTotal.Size = New System.Drawing.Size(100, 22)
+        Me.brainTotal.TabIndex = 16
+        Me.brainTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button1
         '
@@ -107,9 +108,10 @@ Partial Class Form1
         Me.Button1.Text = "Brain"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Timer1
+        'calcPrice
         '
-        Me.Timer1.Interval = 50
+        Me.calcPrice.Enabled = True
+        Me.calcPrice.Interval = 50
         '
         'Form1
         '
@@ -117,7 +119,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.group1Total)
+        Me.Controls.Add(Me.brainTotal)
         Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.TotalTextBox)
         Me.Controls.Add(Me.NextButton)
@@ -134,7 +136,7 @@ Partial Class Form1
     Friend WithEvents PreviousButton As Button
     Friend WithEvents NextButton As Button
     Friend WithEvents ItemSelection1 As ItemSelection
-    Friend WithEvents group1Total As TextBox
+    Friend WithEvents brainTotal As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents calcPrice As Timer
 End Class

@@ -21,16 +21,26 @@ Public Class ItemSelection
     Private Sub checkPrice_Tick(sender As Object, e As EventArgs) Handles brainTimer.Tick
         Group1.Text = groupName
 
-        Item1.Text = item1Name + " (" + item1Price.ToString("c2") + ")"
-        Item2.Text = item2Name + " (" + item2Price.ToString("c2") + ")"
-        Item3.Text = item3Name + " (" + item3Price.ToString("c2") + ")"
-        Item4.Text = item4Name + " (" + item4Price.ToString("c2") + ")"
-        Item5.Text = item5Name + " (" + item5Price.ToString("c2") + ")"
-        Item1M.Text = item1Name + " (" + item1Price.ToString("c2") + ")"
-        Item2M.Text = item2Name + " (" + item2Price.ToString("c2") + ")"
-        Item3M.Text = item3Name + " (" + item3Price.ToString("c2") + ")"
-        Item4M.Text = item4Name + " (" + item4Price.ToString("c2") + ")"
-        Item5M.Text = item5Name + " (" + item5Price.ToString("c2") + ")"
+        Item1.Text =
+            item1Name + " (" + item1Price.ToString("c2") + ")"
+        Item2.Text =
+            item2Name + " (" + item2Price.ToString("c2") + ")"
+        Item3.Text =
+            item3Name + " (" + item3Price.ToString("c2") + ")"
+        Item4.Text =
+            item4Name + " (" + item4Price.ToString("c2") + ")"
+        Item5.Text =
+            item5Name + " (" + item5Price.ToString("c2") + ")"
+        Item1M.Text =
+            item1Name + " (" + item1Price.ToString("c2") + ")"
+        Item2M.Text =
+            item2Name + " (" + item2Price.ToString("c2") + ")"
+        Item3M.Text =
+            item3Name + " (" + item3Price.ToString("c2") + ")"
+        Item4M.Text =
+            item4Name + " (" + item4Price.ToString("c2") + ")"
+        Item5M.Text =
+            item5Name + " (" + item5Price.ToString("c2") + ")"
 
         If isMultiple = True Then
             Item1M.Visible = True
@@ -92,10 +102,31 @@ Public Class ItemSelection
             price(4) = 0
         End If
 
-        subTotal = price(0) + price(1) + price(2) + price(3) + price(4)
+        subTotal =
+            price(0) +
+            price(1) +
+            price(2) +
+            price(3) +
+            price(4)
 
         count = Group1Counter.Value
 
         groupTotal = count * subTotal
+        groupSubTotalText.Text = groupTotal.ToString("c2")
+    End Sub
+
+    Private Sub Group1Clear_Click(sender As Object, e As EventArgs) Handles Group1Clear.Click
+        Item1.Checked = False
+        Item2.Checked = False
+        Item3.Checked = False
+        Item4.Checked = False
+        Item5.Checked = False
+
+        Item1M.Checked = False
+        Item2M.Checked = False
+        Item3M.Checked = False
+        Item4M.Checked = False
+        Item5M.Checked = False
+        Group1Counter.Value = 1
     End Sub
 End Class
