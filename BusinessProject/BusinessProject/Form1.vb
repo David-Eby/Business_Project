@@ -10,7 +10,8 @@ Public Class Form1
     Dim f2 As New Brain
 
     Private Sub ConfirmButton_Click(sender As Object, e As EventArgs) Handles ConfirmButton.Click
-        total = ItemSelection1.groupTotal + f2.Page1_1.groupTotal + ItemSelection2.groupTotal + ItemSelection3.groupTotal + f2.Page1_2.groupTotal + f2.Page1_3.groupTotal
+        total =
+            brainTotal.Text + dataTotal.Text
         TotalTextBox.Text = total.ToString("c2")
     End Sub
 
@@ -42,5 +43,8 @@ Public Class Form1
         Me.Hide()
         f2.ShowDialog()
         Me.Show()
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
     End Sub
 End Class
