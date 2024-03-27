@@ -27,7 +27,8 @@ Partial Class Body
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
         Me.Page3_2 = New BusinessProject.ItemSelection()
-        Me.ItemSelection1 = New BusinessProject.ItemSelection()
+        Me.Page3_1 = New BusinessProject.ItemSelection()
+        Me.ItemSelection3 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'pageTotalText
@@ -75,32 +76,53 @@ Partial Class Body
         Me.Page3_2.Size = New System.Drawing.Size(239, 195)
         Me.Page3_2.TabIndex = 28
         '
-        'ItemSelection1
+        'Page3_1
         '
-        Me.ItemSelection1.groupName = "Cases"
-        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection1.isMultiple = False
-        Me.ItemSelection1.item1Name = "Montech AIR"
-        Me.ItemSelection1.item1Price = New Decimal(New Integer() {6999, 0, 0, 131072})
-        Me.ItemSelection1.item2Name = "CORSAIR"
-        Me.ItemSelection1.item2Price = New Decimal(New Integer() {8499, 0, 0, 131072})
-        Me.ItemSelection1.item3Name = "LIAN LI"
-        Me.ItemSelection1.item3Price = New Decimal(New Integer() {10999, 0, 0, 131072})
-        Me.ItemSelection1.item4Name = "NZXT H9 Flow"
-        Me.ItemSelection1.item4Price = New Decimal(New Integer() {15999, 0, 0, 131072})
-        Me.ItemSelection1.item5Name = "SAMA 3509"
-        Me.ItemSelection1.item5Price = New Decimal(New Integer() {19999, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(23, 125)
-        Me.ItemSelection1.Name = "ItemSelection1"
-        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection1.TabIndex = 29
+        Me.Page3_1.groupName = "Cases"
+        Me.Page3_1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.Page3_1.isMultiple = False
+        Me.Page3_1.item1Name = "Montech AIR"
+        Me.Page3_1.item1Price = New Decimal(New Integer() {6999, 0, 0, 131072})
+        Me.Page3_1.item2Name = "CORSAIR"
+        Me.Page3_1.item2Price = New Decimal(New Integer() {8499, 0, 0, 131072})
+        Me.Page3_1.item3Name = "LIAN LI"
+        Me.Page3_1.item3Price = New Decimal(New Integer() {10999, 0, 0, 131072})
+        Me.Page3_1.item4Name = "NZXT H9 Flow"
+        Me.Page3_1.item4Price = New Decimal(New Integer() {15999, 0, 0, 131072})
+        Me.Page3_1.item5Name = "SAMA 3509"
+        Me.Page3_1.item5Price = New Decimal(New Integer() {19999, 0, 0, 131072})
+        Me.Page3_1.Location = New System.Drawing.Point(23, 125)
+        Me.Page3_1.Name = "Page3_1"
+        Me.Page3_1.Size = New System.Drawing.Size(239, 195)
+        Me.Page3_1.TabIndex = 29
+        '
+        'ItemSelection3
+        '
+        Me.ItemSelection3.groupName = "Power Supplies"
+        Me.ItemSelection3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection3.isMultiple = False
+        Me.ItemSelection3.item1Name = "600W"
+        Me.ItemSelection3.item1Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.ItemSelection3.item2Name = "750W"
+        Me.ItemSelection3.item2Price = New Decimal(New Integer() {7499, 0, 0, 131072})
+        Me.ItemSelection3.item3Name = "850W"
+        Me.ItemSelection3.item3Price = New Decimal(New Integer() {12999, 0, 0, 131072})
+        Me.ItemSelection3.item4Name = "1000W"
+        Me.ItemSelection3.item4Price = New Decimal(New Integer() {17499, 0, 0, 131072})
+        Me.ItemSelection3.item5Name = "1200W"
+        Me.ItemSelection3.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
+        Me.ItemSelection3.Location = New System.Drawing.Point(513, 125)
+        Me.ItemSelection3.Name = "ItemSelection3"
+        Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection3.TabIndex = 30
         '
         'Body
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ItemSelection1)
+        Me.Controls.Add(Me.ItemSelection3)
+        Me.Controls.Add(Me.Page3_1)
         Me.Controls.Add(Me.Page3_2)
         Me.Controls.Add(Me.pageTotalText)
         Me.Controls.Add(Me.HeaderTB)
@@ -115,5 +137,6 @@ Partial Class Body
     Friend WithEvents HeaderTB As TextBox
     Friend WithEvents calcPrice As Timer
     Friend WithEvents Page3_2 As ItemSelection
-    Friend WithEvents ItemSelection1 As ItemSelection
+    Friend WithEvents Page3_1 As ItemSelection
+    Friend WithEvents ItemSelection3 As ItemSelection
 End Class
