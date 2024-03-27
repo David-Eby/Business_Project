@@ -118,20 +118,20 @@ Partial Class Form1
         '
         'ItemSelection1
         '
-        Me.ItemSelection1.groupName = "SSDs"
+        Me.ItemSelection1.groupName = "Cooling"
         Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection1.isMultiple = True
-        Me.ItemSelection1.item1Name = "512GB"
-        Me.ItemSelection1.item1Price = New Decimal(New Integer() {3699, 0, 0, 131072})
-        Me.ItemSelection1.item2Name = "1TB"
-        Me.ItemSelection1.item2Price = New Decimal(New Integer() {6099, 0, 0, 131072})
-        Me.ItemSelection1.item3Name = "2TB"
-        Me.ItemSelection1.item3Price = New Decimal(New Integer() {9999, 0, 0, 131072})
-        Me.ItemSelection1.item4Name = "4TB"
-        Me.ItemSelection1.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
-        Me.ItemSelection1.item5Name = "8TB"
-        Me.ItemSelection1.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(295, 128)
+        Me.ItemSelection1.isMultiple = False
+        Me.ItemSelection1.item1Name = "80mm Fan"
+        Me.ItemSelection1.item1Price = New Decimal(New Integer() {1999, 0, 0, 131072})
+        Me.ItemSelection1.item2Name = "140mm Fan"
+        Me.ItemSelection1.item2Price = New Decimal(New Integer() {4699, 0, 0, 131072})
+        Me.ItemSelection1.item3Name = "120mm Liquid"
+        Me.ItemSelection1.item3Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.ItemSelection1.item4Name = "240mm"
+        Me.ItemSelection1.item4Price = New Decimal(New Integer() {8999, 0, 0, 131072})
+        Me.ItemSelection1.item5Name = "360mm Liquid"
+        Me.ItemSelection1.item5Price = New Decimal(New Integer() {12990, 0, 0, 131072})
+        Me.ItemSelection1.Location = New System.Drawing.Point(301, 128)
         Me.ItemSelection1.Name = "ItemSelection1"
         Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection1.TabIndex = 22
