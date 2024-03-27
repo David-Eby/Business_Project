@@ -23,12 +23,38 @@ Partial Class Data
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Page2_1 = New BusinessProject.ItemSelection()
-        Me.Page2_3 = New BusinessProject.ItemSelection()
         Me.pageTotalText = New System.Windows.Forms.TextBox()
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
+        Me.Page2_1 = New BusinessProject.ItemSelection()
+        Me.Page2_3 = New BusinessProject.ItemSelection()
+        Me.ItemSelection1 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
+        '
+        'pageTotalText
+        '
+        Me.pageTotalText.Location = New System.Drawing.Point(314, 40)
+        Me.pageTotalText.Name = "pageTotalText"
+        Me.pageTotalText.ReadOnly = True
+        Me.pageTotalText.Size = New System.Drawing.Size(158, 22)
+        Me.pageTotalText.TabIndex = 24
+        Me.pageTotalText.Text = "Select All Options"
+        Me.pageTotalText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'HeaderTB
+        '
+        Me.HeaderTB.Location = New System.Drawing.Point(356, 12)
+        Me.HeaderTB.Name = "HeaderTB"
+        Me.HeaderTB.ReadOnly = True
+        Me.HeaderTB.Size = New System.Drawing.Size(75, 22)
+        Me.HeaderTB.TabIndex = 23
+        Me.HeaderTB.Text = "Data"
+        Me.HeaderTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'calcPrice
+        '
+        Me.calcPrice.Enabled = True
+        Me.calcPrice.Interval = 50
         '
         'Page2_1
         '
@@ -70,36 +96,32 @@ Partial Class Data
         Me.Page2_3.Size = New System.Drawing.Size(239, 195)
         Me.Page2_3.TabIndex = 19
         '
-        'pageTotalText
+        'ItemSelection1
         '
-        Me.pageTotalText.Location = New System.Drawing.Point(314, 40)
-        Me.pageTotalText.Name = "pageTotalText"
-        Me.pageTotalText.ReadOnly = True
-        Me.pageTotalText.Size = New System.Drawing.Size(158, 22)
-        Me.pageTotalText.TabIndex = 24
-        Me.pageTotalText.Text = "Select All Options"
-        Me.pageTotalText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'HeaderTB
-        '
-        Me.HeaderTB.Location = New System.Drawing.Point(356, 12)
-        Me.HeaderTB.Name = "HeaderTB"
-        Me.HeaderTB.ReadOnly = True
-        Me.HeaderTB.Size = New System.Drawing.Size(75, 22)
-        Me.HeaderTB.TabIndex = 23
-        Me.HeaderTB.Text = "Data"
-        Me.HeaderTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'calcPrice
-        '
-        Me.calcPrice.Enabled = True
-        Me.calcPrice.Interval = 50
+        Me.ItemSelection1.groupName = "SSDs"
+        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection1.isMultiple = True
+        Me.ItemSelection1.item1Name = "512GB"
+        Me.ItemSelection1.item1Price = New Decimal(New Integer() {3699, 0, 0, 131072})
+        Me.ItemSelection1.item2Name = "1TB"
+        Me.ItemSelection1.item2Price = New Decimal(New Integer() {6099, 0, 0, 131072})
+        Me.ItemSelection1.item3Name = "2TB"
+        Me.ItemSelection1.item3Price = New Decimal(New Integer() {9999, 0, 0, 131072})
+        Me.ItemSelection1.item4Name = "4TB"
+        Me.ItemSelection1.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
+        Me.ItemSelection1.item5Name = "8TB"
+        Me.ItemSelection1.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
+        Me.ItemSelection1.Location = New System.Drawing.Point(275, 121)
+        Me.ItemSelection1.Name = "ItemSelection1"
+        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection1.TabIndex = 25
         '
         'Data
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.pageTotalText)
         Me.Controls.Add(Me.HeaderTB)
         Me.Controls.Add(Me.Page2_1)
@@ -116,4 +138,5 @@ Partial Class Data
     Friend WithEvents pageTotalText As TextBox
     Friend WithEvents HeaderTB As TextBox
     Friend WithEvents calcPrice As Timer
+    Friend WithEvents ItemSelection1 As ItemSelection
 End Class
