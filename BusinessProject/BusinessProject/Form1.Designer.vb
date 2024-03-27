@@ -24,15 +24,13 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ConfirmButton = New System.Windows.Forms.Button()
-        Me.PreviousButton = New System.Windows.Forms.Button()
-        Me.NextButton = New System.Windows.Forms.Button()
         Me.TotalTextBox = New System.Windows.Forms.TextBox()
         Me.brainTotal = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.brainButton = New System.Windows.Forms.Button()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
-        Me.ItemSelection3 = New BusinessProject.ItemSelection()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.dataButton = New System.Windows.Forms.Button()
         Me.dataTotal = New System.Windows.Forms.TextBox()
+        Me.ItemSelection3 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'ConfirmButton
@@ -43,24 +41,6 @@ Partial Class Form1
         Me.ConfirmButton.TabIndex = 2
         Me.ConfirmButton.Text = "Confirm"
         Me.ConfirmButton.UseVisualStyleBackColor = True
-        '
-        'PreviousButton
-        '
-        Me.PreviousButton.Location = New System.Drawing.Point(12, 415)
-        Me.PreviousButton.Name = "PreviousButton"
-        Me.PreviousButton.Size = New System.Drawing.Size(75, 23)
-        Me.PreviousButton.TabIndex = 9
-        Me.PreviousButton.Text = "Previous"
-        Me.PreviousButton.UseVisualStyleBackColor = True
-        '
-        'NextButton
-        '
-        Me.NextButton.Location = New System.Drawing.Point(713, 415)
-        Me.NextButton.Name = "NextButton"
-        Me.NextButton.Size = New System.Drawing.Size(75, 23)
-        Me.NextButton.TabIndex = 10
-        Me.NextButton.Text = "Next"
-        Me.NextButton.UseVisualStyleBackColor = True
         '
         'TotalTextBox
         '
@@ -82,19 +62,38 @@ Partial Class Form1
         Me.brainTotal.Text = "$0.00"
         Me.brainTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Button1
+        'brainButton
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 23)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "Brain"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.brainButton.Location = New System.Drawing.Point(12, 12)
+        Me.brainButton.Name = "brainButton"
+        Me.brainButton.Size = New System.Drawing.Size(100, 23)
+        Me.brainButton.TabIndex = 17
+        Me.brainButton.Text = "Brain"
+        Me.brainButton.UseVisualStyleBackColor = True
         '
         'calcPrice
         '
         Me.calcPrice.Enabled = True
         Me.calcPrice.Interval = 50
+        '
+        'dataButton
+        '
+        Me.dataButton.Location = New System.Drawing.Point(118, 12)
+        Me.dataButton.Name = "dataButton"
+        Me.dataButton.Size = New System.Drawing.Size(100, 23)
+        Me.dataButton.TabIndex = 20
+        Me.dataButton.Text = "Data"
+        Me.dataButton.UseVisualStyleBackColor = True
+        '
+        'dataTotal
+        '
+        Me.dataTotal.Location = New System.Drawing.Point(118, 40)
+        Me.dataTotal.Name = "dataTotal"
+        Me.dataTotal.ReadOnly = True
+        Me.dataTotal.Size = New System.Drawing.Size(100, 22)
+        Me.dataTotal.TabIndex = 21
+        Me.dataTotal.Text = "$0.00"
+        Me.dataTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ItemSelection3
         '
@@ -116,38 +115,17 @@ Partial Class Form1
         Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection3.TabIndex = 19
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(118, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 23)
-        Me.Button2.TabIndex = 20
-        Me.Button2.Text = "Data"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'dataTotal
-        '
-        Me.dataTotal.Location = New System.Drawing.Point(118, 40)
-        Me.dataTotal.Name = "dataTotal"
-        Me.dataTotal.ReadOnly = True
-        Me.dataTotal.Size = New System.Drawing.Size(100, 22)
-        Me.dataTotal.TabIndex = 21
-        Me.dataTotal.Text = "$0.00"
-        Me.dataTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.dataTotal)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.dataButton)
         Me.Controls.Add(Me.ItemSelection3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.brainButton)
         Me.Controls.Add(Me.brainTotal)
         Me.Controls.Add(Me.TotalTextBox)
-        Me.Controls.Add(Me.NextButton)
-        Me.Controls.Add(Me.PreviousButton)
         Me.Controls.Add(Me.ConfirmButton)
         Me.Name = "Form1"
         Me.Text = "Custom Computers"
@@ -157,12 +135,10 @@ Partial Class Form1
     End Sub
     Friend WithEvents ConfirmButton As Button
     Friend WithEvents TotalTextBox As TextBox
-    Friend WithEvents PreviousButton As Button
-    Friend WithEvents NextButton As Button
     Friend WithEvents brainTotal As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents brainButton As Button
     Friend WithEvents calcPrice As Timer
     Friend WithEvents ItemSelection3 As ItemSelection
-    Friend WithEvents Button2 As Button
+    Friend WithEvents dataButton As Button
     Friend WithEvents dataTotal As TextBox
 End Class

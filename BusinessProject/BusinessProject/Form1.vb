@@ -8,28 +8,12 @@ Public Class Form1
     Dim maxPages As Integer
 
     Dim f2 As New Brain
+    Dim f3 As New Data
 
     Private Sub ConfirmButton_Click(sender As Object, e As EventArgs) Handles ConfirmButton.Click
         total =
             brainTotal.Text + dataTotal.Text
         TotalTextBox.Text = total.ToString("c2")
-    End Sub
-
-    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        page += 1
-        If page > maxPages Then
-            page = 1
-        End If
-    End Sub
-    Private Sub PreviousButton_Click(sender As Object, e As EventArgs) Handles PreviousButton.Click
-        page -= 1
-        If page < 1 Then
-            page = maxPages
-        End If
-    End Sub
-    Sub Pages()
-        If page = 1 Then
-        End If
     End Sub
     Private Sub calcPrice_Tick(sender As Object, e As EventArgs) Handles calcPrice.Tick
         If Not f2.pageTotalText.Text = f2.ErrorMessage Then
@@ -37,14 +21,19 @@ Public Class Form1
         Else
             brainTotal.Text = "$0.00"
         End If
+        If Not f3.pageTotalText.Text = f3.ErrorMessage Then
+            dataTotal.Text = f3.pageTotalText.Text
+        Else
+            dataTotal.Text = "$0.00"
+        End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub brainButton_Click(sender As Object, e As EventArgs) Handles brainButton.Click
         Me.Hide()
         f2.ShowDialog()
         Me.Show()
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+    Private Sub dataButton_Click(sender As Object, e As EventArgs) Handles dataButton.Click
+        f3.ShowDialog()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class Brain
-    Dim pageTotal As Decimal
+    Public pageTotal As Decimal
     Public ErrorMessage As String = "Select All Options"
 
     Private Sub calcPrice_Tick(sender As Object, e As EventArgs) Handles calcPrice.Tick
