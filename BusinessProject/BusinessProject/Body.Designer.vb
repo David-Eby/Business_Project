@@ -27,6 +27,7 @@ Partial Class Body
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
         Me.Page3_2 = New BusinessProject.ItemSelection()
+        Me.ItemSelection1 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'pageTotalText
@@ -74,11 +75,32 @@ Partial Class Body
         Me.Page3_2.Size = New System.Drawing.Size(239, 195)
         Me.Page3_2.TabIndex = 28
         '
+        'ItemSelection1
+        '
+        Me.ItemSelection1.groupName = "Cases"
+        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection1.isMultiple = False
+        Me.ItemSelection1.item1Name = "Montech AIR"
+        Me.ItemSelection1.item1Price = New Decimal(New Integer() {6999, 0, 0, 131072})
+        Me.ItemSelection1.item2Name = "CORSAIR"
+        Me.ItemSelection1.item2Price = New Decimal(New Integer() {8499, 0, 0, 131072})
+        Me.ItemSelection1.item3Name = "LIAN LI"
+        Me.ItemSelection1.item3Price = New Decimal(New Integer() {10999, 0, 0, 131072})
+        Me.ItemSelection1.item4Name = "NZXT H9 Flow"
+        Me.ItemSelection1.item4Price = New Decimal(New Integer() {15999, 0, 0, 131072})
+        Me.ItemSelection1.item5Name = "SAMA 3509"
+        Me.ItemSelection1.item5Price = New Decimal(New Integer() {19999, 0, 0, 131072})
+        Me.ItemSelection1.Location = New System.Drawing.Point(23, 125)
+        Me.ItemSelection1.Name = "ItemSelection1"
+        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection1.TabIndex = 29
+        '
         'Body
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.Page3_2)
         Me.Controls.Add(Me.pageTotalText)
         Me.Controls.Add(Me.HeaderTB)
@@ -93,4 +115,5 @@ Partial Class Body
     Friend WithEvents HeaderTB As TextBox
     Friend WithEvents calcPrice As Timer
     Friend WithEvents Page3_2 As ItemSelection
+    Friend WithEvents ItemSelection1 As ItemSelection
 End Class
