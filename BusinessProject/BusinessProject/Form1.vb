@@ -29,9 +29,7 @@ Public Class Form1
     End Sub
 
     Private Sub brainButton_Click(sender As Object, e As EventArgs) Handles brainButton.Click
-        Me.Hide()
         f2.ShowDialog()
-        Me.Show()
     End Sub
     Private Sub dataButton_Click(sender As Object, e As EventArgs) Handles dataButton.Click
         f3.ShowDialog()
