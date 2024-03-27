@@ -31,7 +31,6 @@ Partial Class Form1
         Me.dataButton = New System.Windows.Forms.Button()
         Me.dataTotal = New System.Windows.Forms.TextBox()
         Me.ItemSelection3 = New BusinessProject.ItemSelection()
-        Me.ItemSelection1 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'ConfirmButton
@@ -116,32 +115,11 @@ Partial Class Form1
         Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection3.TabIndex = 19
         '
-        'ItemSelection1
-        '
-        Me.ItemSelection1.groupName = "Cooling"
-        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection1.isMultiple = False
-        Me.ItemSelection1.item1Name = "80mm Fan"
-        Me.ItemSelection1.item1Price = New Decimal(New Integer() {1999, 0, 0, 131072})
-        Me.ItemSelection1.item2Name = "140mm Fan"
-        Me.ItemSelection1.item2Price = New Decimal(New Integer() {4699, 0, 0, 131072})
-        Me.ItemSelection1.item3Name = "120mm Liquid"
-        Me.ItemSelection1.item3Price = New Decimal(New Integer() {4999, 0, 0, 131072})
-        Me.ItemSelection1.item4Name = "240mm"
-        Me.ItemSelection1.item4Price = New Decimal(New Integer() {8999, 0, 0, 131072})
-        Me.ItemSelection1.item5Name = "360mm Liquid"
-        Me.ItemSelection1.item5Price = New Decimal(New Integer() {12990, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(301, 128)
-        Me.ItemSelection1.Name = "ItemSelection1"
-        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection1.TabIndex = 22
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.dataTotal)
         Me.Controls.Add(Me.dataButton)
         Me.Controls.Add(Me.ItemSelection3)
@@ -163,5 +141,4 @@ Partial Class Form1
     Friend WithEvents ItemSelection3 As ItemSelection
     Friend WithEvents dataButton As Button
     Friend WithEvents dataTotal As TextBox
-    Friend WithEvents ItemSelection1 As ItemSelection
 End Class

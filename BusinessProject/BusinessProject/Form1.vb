@@ -4,9 +4,6 @@ Imports System.Windows
 Public Class Form1
     Dim total As Decimal
 
-    Dim page As Integer
-    Dim maxPages As Integer
-
     Dim f2 As New Brain
     Dim f3 As New Data
 

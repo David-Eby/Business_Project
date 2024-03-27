@@ -71,7 +71,7 @@ Partial Class Data
         Me.Page2_1.item4Price = New Decimal(New Integer() {24999, 0, 0, 131072})
         Me.Page2_1.item5Name = "128GB"
         Me.Page2_1.item5Price = New Decimal(New Integer() {42999, 0, 0, 131072})
-        Me.Page2_1.Location = New System.Drawing.Point(12, 121)
+        Me.Page2_1.Location = New System.Drawing.Point(32, 128)
         Me.Page2_1.Name = "Page2_1"
         Me.Page2_1.Size = New System.Drawing.Size(239, 195)
         Me.Page2_1.TabIndex = 20
@@ -91,7 +91,7 @@ Partial Class Data
         Me.Page2_3.item4Price = New Decimal(New Integer() {18179, 0, 0, 131072})
         Me.Page2_3.item5Name = "18 TB"
         Me.Page2_3.item5Price = New Decimal(New Integer() {33499, 0, 0, 131072})
-        Me.Page2_3.Location = New System.Drawing.Point(535, 121)
+        Me.Page2_3.Location = New System.Drawing.Point(522, 128)
         Me.Page2_3.Name = "Page2_3"
         Me.Page2_3.Size = New System.Drawing.Size(239, 195)
         Me.Page2_3.TabIndex = 19
@@ -111,7 +111,7 @@ Partial Class Data
         Me.ItemSelection1.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
         Me.ItemSelection1.item5Name = "8TB"
         Me.ItemSelection1.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(275, 121)
+        Me.ItemSelection1.Location = New System.Drawing.Point(277, 128)
         Me.ItemSelection1.Name = "ItemSelection1"
         Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection1.TabIndex = 25
