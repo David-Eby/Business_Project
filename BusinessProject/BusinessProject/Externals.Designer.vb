@@ -26,10 +26,12 @@ Partial Class Externals
         Me.pageTotalText = New System.Windows.Forms.TextBox()
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
-        Me.ItemSelection2 = New BusinessProject.ItemSelection()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Page4_5 = New BusinessProject.ItemSelection()
+        Me.Page4_3 = New BusinessProject.ItemSelection()
+        Me.Page4_4 = New BusinessProject.ItemSelection()
+        Me.Page4_2 = New BusinessProject.ItemSelection()
         Me.Page4_1 = New BusinessProject.ItemSelection()
-        Me.ItemSelection1 = New BusinessProject.ItemSelection()
-        Me.ItemSelection3 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'pageTotalText
@@ -57,30 +59,94 @@ Partial Class Externals
         Me.calcPrice.Enabled = True
         Me.calcPrice.Interval = 50
         '
-        'ItemSelection2
+        'Label1
         '
-        Me.ItemSelection2.groupName = "Keyboards"
-        Me.ItemSelection2.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection2.isMultiple = False
-        Me.ItemSelection2.item1Name = "Logitech K120"
-        Me.ItemSelection2.item1Price = New Decimal(New Integer() {1299, 0, 0, 131072})
-        Me.ItemSelection2.item2Name = "Logitech K400"
-        Me.ItemSelection2.item2Price = New Decimal(New Integer() {2999, 0, 0, 131072})
-        Me.ItemSelection2.item3Name = "SteelSeries"
-        Me.ItemSelection2.item3Price = New Decimal(New Integer() {4999, 0, 0, 131072})
-        Me.ItemSelection2.item4Name = "Razer BlackWidow"
-        Me.ItemSelection2.item4Price = New Decimal(New Integer() {13999, 0, 0, 131072})
-        Me.ItemSelection2.item5Name = "Corsair K100"
-        Me.ItemSelection2.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
-        Me.ItemSelection2.Location = New System.Drawing.Point(517, 21)
-        Me.ItemSelection2.Name = "ItemSelection2"
-        Me.ItemSelection2.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection2.TabIndex = 29
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(24, 383)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(57, 16)
+        Me.Label1.TabIndex = 32
+        Me.Label1.Text = "Optional"
+        '
+        'Page4_5
+        '
+        Me.Page4_5.groupName = "Chairs"
+        Me.Page4_5.isMultiple = False
+        Me.Page4_5.item1Name = "Vitesse"
+        Me.Page4_5.item1Price = New Decimal(New Integer() {9999, 0, 0, 131072})
+        Me.Page4_5.item2Name = "ProHT"
+        Me.Page4_5.item2Price = New Decimal(New Integer() {12499, 0, 0, 131072})
+        Me.Page4_5.item3Name = "COUGAR Fusion S"
+        Me.Page4_5.item3Price = New Decimal(New Integer() {16999, 0, 0, 131072})
+        Me.Page4_5.item4Name = "AKRACING"
+        Me.Page4_5.item4Price = New Decimal(New Integer() {539, 0, 0, 0})
+        Me.Page4_5.item5Name = "Synk X Ultra"
+        Me.Page4_5.item5Price = New Decimal(New Integer() {129999, 0, 0, 131072})
+        Me.Page4_5.Location = New System.Drawing.Point(280, 135)
+        Me.Page4_5.Name = "Page4_5"
+        Me.Page4_5.Size = New System.Drawing.Size(239, 195)
+        Me.Page4_5.TabIndex = 33
+        '
+        'Page4_3
+        '
+        Me.Page4_3.groupName = "Headphones"
+        Me.Page4_3.isMultiple = False
+        Me.Page4_3.item1Name = "XW3"
+        Me.Page4_3.item1Price = New Decimal(New Integer() {5440, 0, 0, 131072})
+        Me.Page4_3.item2Name = "Logitech G435"
+        Me.Page4_3.item2Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.Page4_3.item3Name = "Corsair VOID"
+        Me.Page4_3.item3Price = New Decimal(New Integer() {7999, 0, 0, 131072})
+        Me.Page4_3.item4Name = "Logitech G733"
+        Me.Page4_3.item4Price = New Decimal(New Integer() {14999, 0, 0, 131072})
+        Me.Page4_3.item5Name = "CORSAIR VIRTUOSO"
+        Me.Page4_3.item5Price = New Decimal(New Integer() {26999, 0, 0, 131072})
+        Me.Page4_3.Location = New System.Drawing.Point(12, 222)
+        Me.Page4_3.Name = "Page4_3"
+        Me.Page4_3.Size = New System.Drawing.Size(239, 195)
+        Me.Page4_3.TabIndex = 31
+        '
+        'Page4_4
+        '
+        Me.Page4_4.groupName = "Monitors"
+        Me.Page4_4.isMultiple = True
+        Me.Page4_4.item1Name = "Acer V226HQL"
+        Me.Page4_4.item1Price = New Decimal(New Integer() {7415, 0, 0, 131072})
+        Me.Page4_4.item2Name = "Z-EDGE"
+        Me.Page4_4.item2Price = New Decimal(New Integer() {12999, 0, 0, 131072})
+        Me.Page4_4.item3Name = "MSI 27"
+        Me.Page4_4.item3Price = New Decimal(New Integer() {21999, 0, 0, 131072})
+        Me.Page4_4.item4Name = "MSI MAG"
+        Me.Page4_4.item4Price = New Decimal(New Integer() {74999, 0, 0, 131072})
+        Me.Page4_4.item5Name = "ASUS 34"
+        Me.Page4_4.item5Price = New Decimal(New Integer() {129999, 0, 0, 131072})
+        Me.Page4_4.Location = New System.Drawing.Point(549, 222)
+        Me.Page4_4.Name = "Page4_4"
+        Me.Page4_4.Size = New System.Drawing.Size(239, 195)
+        Me.Page4_4.TabIndex = 30
+        '
+        'Page4_2
+        '
+        Me.Page4_2.groupName = "Keyboards"
+        Me.Page4_2.isMultiple = False
+        Me.Page4_2.item1Name = "Logitech K120"
+        Me.Page4_2.item1Price = New Decimal(New Integer() {1299, 0, 0, 131072})
+        Me.Page4_2.item2Name = "Logitech K400"
+        Me.Page4_2.item2Price = New Decimal(New Integer() {2999, 0, 0, 131072})
+        Me.Page4_2.item3Name = "SteelSeries"
+        Me.Page4_2.item3Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.Page4_2.item4Name = "Razer BlackWidow"
+        Me.Page4_2.item4Price = New Decimal(New Integer() {13999, 0, 0, 131072})
+        Me.Page4_2.item5Name = "Corsair K100"
+        Me.Page4_2.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
+        Me.Page4_2.Location = New System.Drawing.Point(549, 21)
+        Me.Page4_2.Name = "Page4_2"
+        Me.Page4_2.Size = New System.Drawing.Size(239, 195)
+        Me.Page4_2.TabIndex = 29
         '
         'Page4_1
         '
         Me.Page4_1.groupName = "Mice"
-        Me.Page4_1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page4_1.isMultiple = False
         Me.Page4_1.item1Name = "EVGA X17"
         Me.Page4_1.item1Price = New Decimal(New Integer() {4999, 0, 0, 131072})
@@ -92,59 +158,21 @@ Partial Class Externals
         Me.Page4_1.item4Price = New Decimal(New Integer() {14999, 0, 0, 131072})
         Me.Page4_1.item5Name = "Roccat Wireless"
         Me.Page4_1.item5Price = New Decimal(New Integer() {19580, 0, 0, 131072})
-        Me.Page4_1.Location = New System.Drawing.Point(37, 21)
+        Me.Page4_1.Location = New System.Drawing.Point(12, 21)
         Me.Page4_1.Name = "Page4_1"
         Me.Page4_1.Size = New System.Drawing.Size(239, 195)
         Me.Page4_1.TabIndex = 28
-        '
-        'ItemSelection1
-        '
-        Me.ItemSelection1.groupName = "Monitors"
-        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection1.isMultiple = True
-        Me.ItemSelection1.item1Name = "Acer V226HQL"
-        Me.ItemSelection1.item1Price = New Decimal(New Integer() {7415, 0, 0, 131072})
-        Me.ItemSelection1.item2Name = "Z-EDGE"
-        Me.ItemSelection1.item2Price = New Decimal(New Integer() {12999, 0, 0, 131072})
-        Me.ItemSelection1.item3Name = "MSI 27"
-        Me.ItemSelection1.item3Price = New Decimal(New Integer() {21999, 0, 0, 131072})
-        Me.ItemSelection1.item4Name = "MSI MAG"
-        Me.ItemSelection1.item4Price = New Decimal(New Integer() {74999, 0, 0, 131072})
-        Me.ItemSelection1.item5Name = "ASUS 34"
-        Me.ItemSelection1.item5Price = New Decimal(New Integer() {129999, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(517, 222)
-        Me.ItemSelection1.Name = "ItemSelection1"
-        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection1.TabIndex = 30
-        '
-        'ItemSelection3
-        '
-        Me.ItemSelection3.groupName = "Headphones"
-        Me.ItemSelection3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection3.isMultiple = False
-        Me.ItemSelection3.item1Name = "XW3"
-        Me.ItemSelection3.item1Price = New Decimal(New Integer() {5440, 0, 0, 131072})
-        Me.ItemSelection3.item2Name = "Logitech G435"
-        Me.ItemSelection3.item2Price = New Decimal(New Integer() {4999, 0, 0, 131072})
-        Me.ItemSelection3.item3Name = "Corsair VOID"
-        Me.ItemSelection3.item3Price = New Decimal(New Integer() {7999, 0, 0, 131072})
-        Me.ItemSelection3.item4Name = "Logitech G733"
-        Me.ItemSelection3.item4Price = New Decimal(New Integer() {14999, 0, 0, 131072})
-        Me.ItemSelection3.item5Name = "CORSAIR VIRTUOSO"
-        Me.ItemSelection3.item5Price = New Decimal(New Integer() {26999, 0, 0, 131072})
-        Me.ItemSelection3.Location = New System.Drawing.Point(37, 222)
-        Me.ItemSelection3.Name = "ItemSelection3"
-        Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection3.TabIndex = 31
         '
         'Externals
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ItemSelection3)
-        Me.Controls.Add(Me.ItemSelection1)
-        Me.Controls.Add(Me.ItemSelection2)
+        Me.Controls.Add(Me.Page4_5)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Page4_3)
+        Me.Controls.Add(Me.Page4_4)
+        Me.Controls.Add(Me.Page4_2)
         Me.Controls.Add(Me.Page4_1)
         Me.Controls.Add(Me.pageTotalText)
         Me.Controls.Add(Me.HeaderTB)
@@ -158,8 +186,10 @@ Partial Class Externals
     Friend WithEvents pageTotalText As TextBox
     Friend WithEvents HeaderTB As TextBox
     Friend WithEvents calcPrice As Timer
-    Friend WithEvents ItemSelection2 As ItemSelection
+    Friend WithEvents Page4_2 As ItemSelection
     Friend WithEvents Page4_1 As ItemSelection
-    Friend WithEvents ItemSelection1 As ItemSelection
-    Friend WithEvents ItemSelection3 As ItemSelection
+    Friend WithEvents Page4_4 As ItemSelection
+    Friend WithEvents Page4_3 As ItemSelection
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Page4_5 As ItemSelection
 End Class

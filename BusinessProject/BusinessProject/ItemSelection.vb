@@ -16,7 +16,7 @@ Public Class ItemSelection
 
     Public Property isMultiple As Boolean
 
-    Public Property groupTotal As Decimal
+    Public groupTotal As Decimal
 
     Private Sub checkPrice_Tick(sender As Object, e As EventArgs) Handles brainTimer.Tick
         Group1.Text = groupName
