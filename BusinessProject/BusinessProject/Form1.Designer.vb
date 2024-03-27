@@ -31,6 +31,8 @@ Partial Class Form1
         Me.dataButton = New System.Windows.Forms.Button()
         Me.dataTotal = New System.Windows.Forms.TextBox()
         Me.ItemSelection3 = New BusinessProject.ItemSelection()
+        Me.ItemSelection1 = New BusinessProject.ItemSelection()
+        Me.ItemSelection2 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'ConfirmButton
@@ -115,11 +117,53 @@ Partial Class Form1
         Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
         Me.ItemSelection3.TabIndex = 19
         '
+        'ItemSelection1
+        '
+        Me.ItemSelection1.groupName = "Mice"
+        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection1.isMultiple = False
+        Me.ItemSelection1.item1Name = "EVGA X17"
+        Me.ItemSelection1.item1Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.ItemSelection1.item2Name = "Logitech G502"
+        Me.ItemSelection1.item2Price = New Decimal(New Integer() {5942, 0, 0, 131072})
+        Me.ItemSelection1.item3Name = "Logitech G703"
+        Me.ItemSelection1.item3Price = New Decimal(New Integer() {8999, 0, 0, 131072})
+        Me.ItemSelection1.item4Name = "ASUS ROG"
+        Me.ItemSelection1.item4Price = New Decimal(New Integer() {14999, 0, 0, 131072})
+        Me.ItemSelection1.item5Name = "Roccat Wireless"
+        Me.ItemSelection1.item5Price = New Decimal(New Integer() {19580, 0, 0, 131072})
+        Me.ItemSelection1.Location = New System.Drawing.Point(295, 128)
+        Me.ItemSelection1.Name = "ItemSelection1"
+        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection1.TabIndex = 22
+        '
+        'ItemSelection2
+        '
+        Me.ItemSelection2.groupName = "Keyboards"
+        Me.ItemSelection2.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ItemSelection2.isMultiple = False
+        Me.ItemSelection2.item1Name = "Logitech K120"
+        Me.ItemSelection2.item1Price = New Decimal(New Integer() {1299, 0, 0, 131072})
+        Me.ItemSelection2.item2Name = "Logitech K400"
+        Me.ItemSelection2.item2Price = New Decimal(New Integer() {2999, 0, 0, 131072})
+        Me.ItemSelection2.item3Name = "SteelSeries"
+        Me.ItemSelection2.item3Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.ItemSelection2.item4Name = "Razer BlackWidow"
+        Me.ItemSelection2.item4Price = New Decimal(New Integer() {13999, 0, 0, 131072})
+        Me.ItemSelection2.item5Name = "Corsair K100"
+        Me.ItemSelection2.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
+        Me.ItemSelection2.Location = New System.Drawing.Point(540, 128)
+        Me.ItemSelection2.Name = "ItemSelection2"
+        Me.ItemSelection2.Size = New System.Drawing.Size(239, 195)
+        Me.ItemSelection2.TabIndex = 23
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ItemSelection2)
+        Me.Controls.Add(Me.ItemSelection1)
         Me.Controls.Add(Me.dataTotal)
         Me.Controls.Add(Me.dataButton)
         Me.Controls.Add(Me.ItemSelection3)
@@ -141,4 +185,6 @@ Partial Class Form1
     Friend WithEvents ItemSelection3 As ItemSelection
     Friend WithEvents dataButton As Button
     Friend WithEvents dataTotal As TextBox
+    Friend WithEvents ItemSelection1 As ItemSelection
+    Friend WithEvents ItemSelection2 As ItemSelection
 End Class
