@@ -59,7 +59,6 @@ Partial Class Brain
         'Page1_3
         '
         Me.Page1_3.groupName = "Motherboards"
-        Me.Page1_3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page1_3.isMultiple = False
         Me.Page1_3.item1Name = "B650M"
         Me.Page1_3.item1Price = New Decimal(New Integer() {14999, 0, 0, 131072})
@@ -71,7 +70,7 @@ Partial Class Brain
         Me.Page1_3.item4Price = New Decimal(New Integer() {34999, 0, 0, 131072})
         Me.Page1_3.item5Name = "X670E-E"
         Me.Page1_3.item5Price = New Decimal(New Integer() {47999, 0, 0, 131072})
-        Me.Page1_3.Location = New System.Drawing.Point(541, 79)
+        Me.Page1_3.Location = New System.Drawing.Point(538, 111)
         Me.Page1_3.Name = "Page1_3"
         Me.Page1_3.Size = New System.Drawing.Size(239, 195)
         Me.Page1_3.TabIndex = 21
@@ -79,7 +78,6 @@ Partial Class Brain
         'Page1_2
         '
         Me.Page1_2.groupName = "GPUs"
-        Me.Page1_2.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page1_2.isMultiple = False
         Me.Page1_2.item1Name = "3060"
         Me.Page1_2.item1Price = New Decimal(New Integer() {33384, 0, 0, 131072})
@@ -91,7 +89,7 @@ Partial Class Brain
         Me.Page1_2.item4Price = New Decimal(New Integer() {116999, 0, 0, 131072})
         Me.Page1_2.item5Name = "4090"
         Me.Page1_2.item5Price = New Decimal(New Integer() {293628, 0, 0, 131072})
-        Me.Page1_2.Location = New System.Drawing.Point(285, 79)
+        Me.Page1_2.Location = New System.Drawing.Point(282, 111)
         Me.Page1_2.Name = "Page1_2"
         Me.Page1_2.Size = New System.Drawing.Size(239, 195)
         Me.Page1_2.TabIndex = 20
@@ -99,7 +97,6 @@ Partial Class Brain
         'Page1_1
         '
         Me.Page1_1.groupName = "CPUs"
-        Me.Page1_1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page1_1.isMultiple = False
         Me.Page1_1.item1Name = "6 Core"
         Me.Page1_1.item1Price = New Decimal(New Integer() {139, 0, 0, 0})
@@ -111,7 +108,7 @@ Partial Class Brain
         Me.Page1_1.item4Price = New Decimal(New Integer() {669, 0, 0, 0})
         Me.Page1_1.item5Name = "Threadripper"
         Me.Page1_1.item5Price = New Decimal(New Integer() {5227, 0, 0, 0})
-        Me.Page1_1.Location = New System.Drawing.Point(26, 79)
+        Me.Page1_1.Location = New System.Drawing.Point(23, 111)
         Me.Page1_1.Name = "Page1_1"
         Me.Page1_1.Size = New System.Drawing.Size(239, 195)
         Me.Page1_1.TabIndex = 19

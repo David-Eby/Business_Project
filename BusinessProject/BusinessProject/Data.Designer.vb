@@ -28,7 +28,7 @@ Partial Class Data
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
         Me.Page2_1 = New BusinessProject.ItemSelection()
         Me.Page2_3 = New BusinessProject.ItemSelection()
-        Me.ItemSelection1 = New BusinessProject.ItemSelection()
+        Me.Page2_2 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'pageTotalText
@@ -59,7 +59,6 @@ Partial Class Data
         'Page2_1
         '
         Me.Page2_1.groupName = "Ram"
-        Me.Page2_1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page2_1.isMultiple = False
         Me.Page2_1.item1Name = "16GB"
         Me.Page2_1.item1Price = New Decimal(New Integer() {3599, 0, 0, 131072})
@@ -79,7 +78,6 @@ Partial Class Data
         'Page2_3
         '
         Me.Page2_3.groupName = "Hard Drives"
-        Me.Page2_3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page2_3.isMultiple = True
         Me.Page2_3.item1Name = "500 MB"
         Me.Page2_3.item1Price = New Decimal(New Integer() {2862, 0, 0, 131072})
@@ -96,32 +94,31 @@ Partial Class Data
         Me.Page2_3.Size = New System.Drawing.Size(239, 195)
         Me.Page2_3.TabIndex = 19
         '
-        'ItemSelection1
+        'Page2_2
         '
-        Me.ItemSelection1.groupName = "SSDs"
-        Me.ItemSelection1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection1.isMultiple = True
-        Me.ItemSelection1.item1Name = "512GB"
-        Me.ItemSelection1.item1Price = New Decimal(New Integer() {3699, 0, 0, 131072})
-        Me.ItemSelection1.item2Name = "1TB"
-        Me.ItemSelection1.item2Price = New Decimal(New Integer() {6099, 0, 0, 131072})
-        Me.ItemSelection1.item3Name = "2TB"
-        Me.ItemSelection1.item3Price = New Decimal(New Integer() {9999, 0, 0, 131072})
-        Me.ItemSelection1.item4Name = "4TB"
-        Me.ItemSelection1.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
-        Me.ItemSelection1.item5Name = "8TB"
-        Me.ItemSelection1.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
-        Me.ItemSelection1.Location = New System.Drawing.Point(277, 128)
-        Me.ItemSelection1.Name = "ItemSelection1"
-        Me.ItemSelection1.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection1.TabIndex = 25
+        Me.Page2_2.groupName = "SSDs"
+        Me.Page2_2.isMultiple = True
+        Me.Page2_2.item1Name = "512GB"
+        Me.Page2_2.item1Price = New Decimal(New Integer() {3699, 0, 0, 131072})
+        Me.Page2_2.item2Name = "1TB"
+        Me.Page2_2.item2Price = New Decimal(New Integer() {6099, 0, 0, 131072})
+        Me.Page2_2.item3Name = "2TB"
+        Me.Page2_2.item3Price = New Decimal(New Integer() {9999, 0, 0, 131072})
+        Me.Page2_2.item4Name = "4TB"
+        Me.Page2_2.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
+        Me.Page2_2.item5Name = "8TB"
+        Me.Page2_2.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
+        Me.Page2_2.Location = New System.Drawing.Point(277, 128)
+        Me.Page2_2.Name = "Page2_2"
+        Me.Page2_2.Size = New System.Drawing.Size(239, 195)
+        Me.Page2_2.TabIndex = 25
         '
         'Data
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ItemSelection1)
+        Me.Controls.Add(Me.Page2_2)
         Me.Controls.Add(Me.pageTotalText)
         Me.Controls.Add(Me.HeaderTB)
         Me.Controls.Add(Me.Page2_1)
@@ -138,5 +135,5 @@ Partial Class Data
     Friend WithEvents pageTotalText As TextBox
     Friend WithEvents HeaderTB As TextBox
     Friend WithEvents calcPrice As Timer
-    Friend WithEvents ItemSelection1 As ItemSelection
+    Friend WithEvents Page2_2 As ItemSelection
 End Class

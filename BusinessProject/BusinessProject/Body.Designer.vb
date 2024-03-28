@@ -28,7 +28,7 @@ Partial Class Body
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
         Me.Page3_2 = New BusinessProject.ItemSelection()
         Me.Page3_1 = New BusinessProject.ItemSelection()
-        Me.ItemSelection3 = New BusinessProject.ItemSelection()
+        Me.Page3_3 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'pageTotalText
@@ -59,7 +59,6 @@ Partial Class Body
         'Page3_2
         '
         Me.Page3_2.groupName = "Cooling"
-        Me.Page3_2.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page3_2.isMultiple = False
         Me.Page3_2.item1Name = "80mm Fan"
         Me.Page3_2.item1Price = New Decimal(New Integer() {1999, 0, 0, 131072})
@@ -79,7 +78,6 @@ Partial Class Body
         'Page3_1
         '
         Me.Page3_1.groupName = "Cases"
-        Me.Page3_1.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Page3_1.isMultiple = False
         Me.Page3_1.item1Name = "Montech AIR"
         Me.Page3_1.item1Price = New Decimal(New Integer() {6999, 0, 0, 131072})
@@ -96,32 +94,31 @@ Partial Class Body
         Me.Page3_1.Size = New System.Drawing.Size(239, 195)
         Me.Page3_1.TabIndex = 29
         '
-        'ItemSelection3
+        'Page3_3
         '
-        Me.ItemSelection3.groupName = "Power Supplies"
-        Me.ItemSelection3.groupTotal = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ItemSelection3.isMultiple = False
-        Me.ItemSelection3.item1Name = "600W"
-        Me.ItemSelection3.item1Price = New Decimal(New Integer() {4999, 0, 0, 131072})
-        Me.ItemSelection3.item2Name = "750W"
-        Me.ItemSelection3.item2Price = New Decimal(New Integer() {7499, 0, 0, 131072})
-        Me.ItemSelection3.item3Name = "850W"
-        Me.ItemSelection3.item3Price = New Decimal(New Integer() {12999, 0, 0, 131072})
-        Me.ItemSelection3.item4Name = "1000W"
-        Me.ItemSelection3.item4Price = New Decimal(New Integer() {17499, 0, 0, 131072})
-        Me.ItemSelection3.item5Name = "1200W"
-        Me.ItemSelection3.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
-        Me.ItemSelection3.Location = New System.Drawing.Point(513, 125)
-        Me.ItemSelection3.Name = "ItemSelection3"
-        Me.ItemSelection3.Size = New System.Drawing.Size(239, 195)
-        Me.ItemSelection3.TabIndex = 30
+        Me.Page3_3.groupName = "Power Supplies"
+        Me.Page3_3.isMultiple = False
+        Me.Page3_3.item1Name = "600W"
+        Me.Page3_3.item1Price = New Decimal(New Integer() {4999, 0, 0, 131072})
+        Me.Page3_3.item2Name = "750W"
+        Me.Page3_3.item2Price = New Decimal(New Integer() {7499, 0, 0, 131072})
+        Me.Page3_3.item3Name = "850W"
+        Me.Page3_3.item3Price = New Decimal(New Integer() {12999, 0, 0, 131072})
+        Me.Page3_3.item4Name = "1000W"
+        Me.Page3_3.item4Price = New Decimal(New Integer() {17499, 0, 0, 131072})
+        Me.Page3_3.item5Name = "1200W"
+        Me.Page3_3.item5Price = New Decimal(New Integer() {24999, 0, 0, 131072})
+        Me.Page3_3.Location = New System.Drawing.Point(513, 125)
+        Me.Page3_3.Name = "Page3_3"
+        Me.Page3_3.Size = New System.Drawing.Size(239, 195)
+        Me.Page3_3.TabIndex = 30
         '
         'Body
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ItemSelection3)
+        Me.Controls.Add(Me.Page3_3)
         Me.Controls.Add(Me.Page3_1)
         Me.Controls.Add(Me.Page3_2)
         Me.Controls.Add(Me.pageTotalText)
@@ -138,5 +135,5 @@ Partial Class Body
     Friend WithEvents calcPrice As Timer
     Friend WithEvents Page3_2 As ItemSelection
     Friend WithEvents Page3_1 As ItemSelection
-    Friend WithEvents ItemSelection3 As ItemSelection
+    Friend WithEvents Page3_3 As ItemSelection
 End Class
