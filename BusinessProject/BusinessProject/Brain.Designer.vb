@@ -117,6 +117,7 @@ Partial Class Brain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.MediumOrchid
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.pageTotalText)
         Me.Controls.Add(Me.Page1_3)
