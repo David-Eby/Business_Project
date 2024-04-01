@@ -167,6 +167,7 @@ Partial Class Externals
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Page4_5)
         Me.Controls.Add(Me.Label1)
