@@ -66,7 +66,7 @@ Partial Class Body
         Me.Page3_2.item2Price = New Decimal(New Integer() {4699, 0, 0, 131072})
         Me.Page3_2.item3Name = "120mm Liquid"
         Me.Page3_2.item3Price = New Decimal(New Integer() {4999, 0, 0, 131072})
-        Me.Page3_2.item4Name = "240mm"
+        Me.Page3_2.item4Name = "240mm Liquid"
         Me.Page3_2.item4Price = New Decimal(New Integer() {8999, 0, 0, 131072})
         Me.Page3_2.item5Name = "360mm Liquid"
         Me.Page3_2.item5Price = New Decimal(New Integer() {12990, 0, 0, 131072})
