@@ -26,7 +26,6 @@ Partial Class Externals
         Me.pageTotalText = New System.Windows.Forms.TextBox()
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Page4_5 = New BusinessProject.ItemSelection()
         Me.Page4_3 = New BusinessProject.ItemSelection()
         Me.Page4_4 = New BusinessProject.ItemSelection()
@@ -59,18 +58,9 @@ Partial Class Externals
         Me.calcPrice.Enabled = True
         Me.calcPrice.Interval = 50
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 383)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 16)
-        Me.Label1.TabIndex = 32
-        Me.Label1.Text = "Optional"
-        '
         'Page4_5
         '
-        Me.Page4_5.groupName = "Chairs"
+        Me.Page4_5.groupName = "Chairs (Optional)"
         Me.Page4_5.isMultiple = False
         Me.Page4_5.item1Name = "Vitesse"
         Me.Page4_5.item1Price = New Decimal(New Integer() {9999, 0, 0, 131072})
@@ -89,7 +79,7 @@ Partial Class Externals
         '
         'Page4_3
         '
-        Me.Page4_3.groupName = "Headphones"
+        Me.Page4_3.groupName = "Headphones (Optional)"
         Me.Page4_3.isMultiple = False
         Me.Page4_3.item1Name = "XW3"
         Me.Page4_3.item1Price = New Decimal(New Integer() {5440, 0, 0, 131072})
@@ -170,7 +160,6 @@ Partial Class Externals
         Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Page4_5)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Page4_3)
         Me.Controls.Add(Me.Page4_4)
         Me.Controls.Add(Me.Page4_2)
@@ -191,6 +180,5 @@ Partial Class Externals
     Friend WithEvents Page4_1 As ItemSelection
     Friend WithEvents Page4_4 As ItemSelection
     Friend WithEvents Page4_3 As ItemSelection
-    Friend WithEvents Label1 As Label
     Friend WithEvents Page4_5 As ItemSelection
 End Class

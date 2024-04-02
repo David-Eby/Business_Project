@@ -26,9 +26,9 @@ Partial Class Data
         Me.pageTotalText = New System.Windows.Forms.TextBox()
         Me.HeaderTB = New System.Windows.Forms.TextBox()
         Me.calcPrice = New System.Windows.Forms.Timer(Me.components)
+        Me.Page2_2 = New BusinessProject.ItemSelection()
         Me.Page2_1 = New BusinessProject.ItemSelection()
         Me.Page2_3 = New BusinessProject.ItemSelection()
-        Me.Page2_2 = New BusinessProject.ItemSelection()
         Me.SuspendLayout()
         '
         'pageTotalText
@@ -56,6 +56,25 @@ Partial Class Data
         Me.calcPrice.Enabled = True
         Me.calcPrice.Interval = 50
         '
+        'Page2_2
+        '
+        Me.Page2_2.groupName = "SSDs"
+        Me.Page2_2.isMultiple = True
+        Me.Page2_2.item1Name = "512GB"
+        Me.Page2_2.item1Price = New Decimal(New Integer() {3699, 0, 0, 131072})
+        Me.Page2_2.item2Name = "1TB"
+        Me.Page2_2.item2Price = New Decimal(New Integer() {6099, 0, 0, 131072})
+        Me.Page2_2.item3Name = "2TB"
+        Me.Page2_2.item3Price = New Decimal(New Integer() {9999, 0, 0, 131072})
+        Me.Page2_2.item4Name = "4TB"
+        Me.Page2_2.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
+        Me.Page2_2.item5Name = "8TB"
+        Me.Page2_2.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
+        Me.Page2_2.Location = New System.Drawing.Point(277, 128)
+        Me.Page2_2.Name = "Page2_2"
+        Me.Page2_2.Size = New System.Drawing.Size(239, 195)
+        Me.Page2_2.TabIndex = 25
+        '
         'Page2_1
         '
         Me.Page2_1.groupName = "Ram"
@@ -77,41 +96,22 @@ Partial Class Data
         '
         'Page2_3
         '
-        Me.Page2_3.groupName = "Hard Drives"
+        Me.Page2_3.groupName = "Hard Drives (Optional)"
         Me.Page2_3.isMultiple = True
-        Me.Page2_3.item1Name = "500 MB"
-        Me.Page2_3.item1Price = New Decimal(New Integer() {2862, 0, 0, 131072})
-        Me.Page2_3.item2Name = "1 TB"
-        Me.Page2_3.item2Price = New Decimal(New Integer() {6008, 0, 0, 131072})
-        Me.Page2_3.item3Name = "2 TB"
-        Me.Page2_3.item3Price = New Decimal(New Integer() {7099, 0, 0, 131072})
-        Me.Page2_3.item4Name = "10 TB"
-        Me.Page2_3.item4Price = New Decimal(New Integer() {18179, 0, 0, 131072})
-        Me.Page2_3.item5Name = "18 TB"
-        Me.Page2_3.item5Price = New Decimal(New Integer() {33499, 0, 0, 131072})
+        Me.Page2_3.item1Name = "4 TB"
+        Me.Page2_3.item1Price = New Decimal(New Integer() {9799, 0, 0, 131072})
+        Me.Page2_3.item2Name = "8 TB"
+        Me.Page2_3.item2Price = New Decimal(New Integer() {23999, 0, 0, 131072})
+        Me.Page2_3.item3Name = "12 TB"
+        Me.Page2_3.item3Price = New Decimal(New Integer() {35999, 0, 0, 131072})
+        Me.Page2_3.item4Name = "16 TB"
+        Me.Page2_3.item4Price = New Decimal(New Integer() {392, 0, 0, 0})
+        Me.Page2_3.item5Name = "20 TB"
+        Me.Page2_3.item5Price = New Decimal(New Integer() {500, 0, 0, 0})
         Me.Page2_3.Location = New System.Drawing.Point(522, 128)
         Me.Page2_3.Name = "Page2_3"
         Me.Page2_3.Size = New System.Drawing.Size(239, 195)
         Me.Page2_3.TabIndex = 19
-        '
-        'Page2_2
-        '
-        Me.Page2_2.groupName = "SSDs"
-        Me.Page2_2.isMultiple = True
-        Me.Page2_2.item1Name = "512GB"
-        Me.Page2_2.item1Price = New Decimal(New Integer() {3699, 0, 0, 131072})
-        Me.Page2_2.item2Name = "1TB"
-        Me.Page2_2.item2Price = New Decimal(New Integer() {6099, 0, 0, 131072})
-        Me.Page2_2.item3Name = "2TB"
-        Me.Page2_2.item3Price = New Decimal(New Integer() {9999, 0, 0, 131072})
-        Me.Page2_2.item4Name = "4TB"
-        Me.Page2_2.item4Price = New Decimal(New Integer() {18999, 0, 0, 131072})
-        Me.Page2_2.item5Name = "8TB"
-        Me.Page2_2.item5Price = New Decimal(New Integer() {51999, 0, 0, 131072})
-        Me.Page2_2.Location = New System.Drawing.Point(277, 128)
-        Me.Page2_2.Name = "Page2_2"
-        Me.Page2_2.Size = New System.Drawing.Size(239, 195)
-        Me.Page2_2.TabIndex = 25
         '
         'Data
         '
