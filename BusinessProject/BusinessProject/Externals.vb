@@ -15,6 +15,7 @@
 
             pageTotalText.Text = pageTotal.ToString("c2")
         Else
+            pageTotal = 0
             pageTotalText.Text = ErrorMessage
         End If
     End Sub
