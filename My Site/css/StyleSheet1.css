@@ -1,6 +1,6 @@
 ﻿body {
-    background-color: steelblue
+    background-color: blueviolet;
 }
-#red {
-    color: red
+.about {
+    font-size: 18px;
 }
