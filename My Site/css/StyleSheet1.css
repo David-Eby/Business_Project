@@ -16,12 +16,23 @@ div.navigation li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
 }
+
+div.navigation img.logo {
+    height: 35px;
+    width: 35px;
+    padding: 10px 10px;
+}
+
 /* Change the link color to #111 (black) on hover */
-div.navigation li a:hover {
+div.navigation li.tab a:hover {
     background-color: #111;
+}
+
+div.navigation li.current {
+    background-color: #222;
 }
 
 body {
