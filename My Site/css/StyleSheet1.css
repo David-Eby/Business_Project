@@ -26,6 +26,11 @@ div.navigation img.logo {
     padding: 10px 10px;
 }
 
+div.navigation a.title {
+    cursor: default;
+    user-select: none;
+}
+
 /* Change the link color to #111 (black) on hover */
 div.navigation li.tab a:hover {
     background-color: #111;
